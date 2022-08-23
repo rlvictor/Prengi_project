@@ -3,7 +3,7 @@
     margin-left: 90px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .contacts {
     &__wrapper {
       padding: 6px 0;
@@ -111,6 +111,33 @@
     }
     &__img {
       width: 70%;
+    }
+  }
+  .industries {
+    &__nav {
+      width: 698px;
+    }
+    &__item {
+      padding: 9px 19px;
+      a {
+        font-size: 12px;
+      }
+    }
+    &__computer {
+      width: 698px;
+    }
+    &__macbook {
+      width: 698px;
+    }
+  }
+  .carousel__mac {
+    width: 511px;
+    height: 321px;
+    top: -3px;
+    left: -10px;
+    &-inner {
+      width: 511px;
+      height: 321px;
     }
   }
 }
