@@ -1,0 +1,49 @@
+.carousel__mac {
+  width: 696px;
+  height: 435px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.carousel__mac-inner {
+  width: 696px;
+  height: 435px;
+}
+
+.carousel__mac-control-prev {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  opacity: 1;
+  background: none;
+  border: none;
+  z-index: 5;
+}
+
+.carousel__mac-control-next {
+  position: absolute;
+  top: 220px;
+  right: 0;
+  opacity: 1;
+  background: none;
+  border: none;
+  z-index: 5;
+}
+
+.carousel__mac-control-prev-icon {
+  width: 18px;
+  height: 59px;
+  background-image: url("../../icons/left_arrow.png");
+  background-size: 100% 100%;
+}
+.carousel__mac-control-next-icon {
+  width: 18px;
+  height: 59px;
+  background-image: url("../../icons/right_arrow.png");
+  background-size: 100% 100%;
+}
+
+.carousel__mac-indicators {
+  position: absolute;
+}

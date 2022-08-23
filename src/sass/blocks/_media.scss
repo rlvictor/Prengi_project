@@ -1,0 +1,273 @@
+@media (min-width: 1400px) {
+  .header__phone {
+    margin-left: 90px;
+  }
+}
+@media (max-width: 1199px) {
+  .contacts {
+    &__wrapper {
+      padding: 6px 0;
+    }
+  }
+  .industries {
+    &__tittle {
+      width: 625px;
+      font-size: 29px;
+    }
+    &__nav {
+      width: 778px;
+    }
+    &__item {
+      padding: 8px 21px;
+    }
+    &__computer {
+      width: 780px;
+    }
+    &__macbook {
+      width: 780px;
+    }
+    &__fill {
+      top: 30px;
+      left: 104px;
+    }
+  }
+  .carousel__mac {
+    width: 572px;
+    height: 360px;
+    &-inner {
+      width: 573px;
+      height: 359px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .contacts {
+    &__wrapper {
+      height: 120px;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      &-descr {
+        text-align: center;
+      }
+    }
+  }
+  .header {
+    min-height: 100%;
+    &__wrapper {
+      padding: 0 35px;
+    }
+    &__tittle {
+      margin-top: 60px;
+      font-size: 38px;
+    }
+    &__subtittle {
+      font-size: 21px;
+    }
+    &__button {
+      width: 215px;
+    }
+    &__phone {
+      margin-top: 130px;
+      margin-left: -45px;
+    }
+  }
+  .carousel {
+    &-indicators {
+      top: -170px;
+      left: -85px;
+      width: 250px;
+    }
+    &-control-prev {
+      top: -173px;
+      left: -95px;
+    }
+    &-control-next {
+      top: -176px;
+      left: 210px;
+    }
+    &-control-prev-icon {
+      background-size: 100%;
+    }
+    &-control-next-icon {
+      background-size: 100%;
+    }
+    .carousel-indicators [data-bs-target] {
+      margin-right: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .modules {
+    // &__item {
+    //   padding-bottom: 20px;
+    // }
+    &__descr {
+      font-size: 14px;
+    }
+    &__img {
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+  .header {
+    &__tittle {
+      font-size: 35px;
+    }
+    &__popup {
+      display: none;
+    }
+    &__nav {
+      display: none;
+    }
+    &__hamburger {
+      display: block;
+      position: absolute;
+      right: 65px;
+      top: 70px;
+      width: 37px;
+      height: 25px;
+      span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #ffffff;
+        margin-bottom: 7px;
+        transition: 0.5s all;
+      }
+      &-active {
+        span {
+          margin-bottom: -2px;
+          &:nth-child(1) {
+            transform: rotate(-45deg);
+          }
+          &:nth-child(2) {
+            display: none;
+          }
+          &:nth-child(3) {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+
+    &__phone {
+      margin-top: 130px;
+      margin-left: 25px;
+      width: 290px;
+    }
+  }
+  .carousel {
+    top: 67px;
+    right: 15px;
+    &-inner {
+      width: 181px;
+      height: 316px;
+    }
+    &-indicators {
+      top: -135px;
+      left: -90px;
+      width: 250px;
+    }
+    &-control-prev {
+      top: -142px;
+      left: -110px;
+    }
+    &-control-next {
+      top: -142px;
+      left: 190px;
+    }
+    &-control-prev-icon {
+      background-size: 100%;
+    }
+    &-control-next-icon {
+      background-size: 100%;
+    }
+    .carousel-indicators [data-bs-target] {
+      margin-right: 20px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .modules {
+    padding: 25px 0;
+    &__item {
+      width: 70%;
+      margin: 0 auto 20px auto;
+    }
+    &__img {
+      width: 55%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    &__logo {
+      margin-top: 10px;
+      width: 120px;
+    }
+    &__tittle {
+      margin-top: 20px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__hamburger {
+      right: 20px;
+    }
+    &__mini {
+      &-list {
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+    &__button {
+      width: 160px;
+      height: 34px;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__phone {
+      margin-left: -42px;
+      width: 264px;
+    }
+  }
+  .carousel {
+    top: 61px;
+    right: 13px;
+    &-inner {
+      width: 164px;
+      height: 285px;
+    }
+    &-indicators {
+      top: -130px;
+      left: -53px;
+      width: 150px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      margin-right: 5px;
+      width: 8px;
+      height: 8px;
+    }
+    &-control-prev {
+      left: -55px;
+    }
+    &-control-next {
+      left: 110px;
+    }
+  }
+}

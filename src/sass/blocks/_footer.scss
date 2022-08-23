@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+  padding: 48px 0 38px 0;
+  background-color: #0082a1;
+  &__tittle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  &__logo {
+    margin-top: 18px;
+  }
+  &__descr {
+    width: 395px;
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #fff;
+  }
+  &__menu {
+    margin-left: 0;
+    padding-left: 0;
+    line-height: 19px;
+  }
+  &__list {
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 19px;
+      color: #fff;
+    }
+  }
+  hr {
+    color: #fff;
+  }
+  &__rights {
+    margin-top: 10px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 17px;
+      color: #fff;
+    }
+  }
+  &__modules {
+    margin-left: 20px;
+  }
+  &__industries,
+  &__about {
+    margin-left: 40px;
+  }
+}

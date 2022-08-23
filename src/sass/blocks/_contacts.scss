@@ -1,0 +1,33 @@
+.contacts {
+  width: 100%;
+  background: rgb(234, 234, 234);
+  &__wrapper {
+    padding: 16px 0;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    color: #242424;
+  }
+  &__icon {
+    width: 28px;
+    height: 21px;
+    // border: 1px solid #242424;
+  }
+  &__item {
+    display: flex;
+    &-descr {
+      margin-left: 11px;
+    }
+    &-tittle {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &-addr,
+    &-tel {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}

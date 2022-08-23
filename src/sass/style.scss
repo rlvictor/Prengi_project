@@ -1,0 +1,29 @@
+@import "libs/bootstrap-reboot.min.css";
+@import "libs/bootstrap-grid.min.css";
+
+@import "libs/fonts";
+
+* {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+.container-xxl {
+  max-width: 1140px;
+}
+
+@import "blocks/tittle";
+@import "blocks/buttons";
+@import "blocks/contacts";
+@import "blocks/header";
+@import "blocks/modules";
+@import "blocks/industries";
+@import "blocks/benefits";
+@import "blocks/variants";
+@import "blocks/feed";
+@import "blocks/footer";
+@import "blocks/popup";
+@import "blocks/carousel";
+@import "blocks/carousel-mac";
+@import "libs/bootstrap.min.css";
+@import "blocks/media";
