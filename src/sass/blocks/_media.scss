@@ -73,7 +73,8 @@
     }
     &__phone {
       margin-top: 130px;
-      margin-left: -45px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   .carousel {
@@ -103,9 +104,6 @@
     }
   }
   .modules {
-    // &__item {
-    //   padding-bottom: 20px;
-    // }
     &__descr {
       font-size: 14px;
     }
@@ -139,6 +137,12 @@
       width: 511px;
       height: 321px;
     }
+  }
+  .carousel__mac-control-prev {
+    top: 160px;
+  }
+  .carousel__mac-control-next {
+    top: 160px;
   }
 }
 @media (max-width: 767px) {
@@ -187,8 +191,6 @@
     }
 
     &__phone {
-      margin-top: 130px;
-      margin-left: 25px;
       width: 290px;
     }
   }
@@ -234,9 +236,64 @@
       width: 55%;
     }
   }
+  .industries {
+    &__tittle {
+      width: 525px;
+      font-size: 24px;
+    }
+    &__nav {
+      // width: 523px;
+      width: 25%;
+      height: 267px;
+      display: flex;
+      justify-content: center;
+    }
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      border-right: none;
+      border-bottom: 1px solid #8b9192;
+      padding: 7px 8px;
+      a {
+        font-size: 11px;
+      }
+    }
+    &__computer {
+      width: 520px;
+    }
+    &__macbook {
+      width: 520px;
+    }
+    &__fill {
+      width: 381px;
+      height: 238px;
+      top: 21px;
+      left: 69px;
+    }
+  }
+  .carousel__mac {
+    top: -1px;
+    left: 0;
+    width: 382px;
+    height: 239px;
+    &-inner {
+      width: 383px;
+      height: 239px;
+    }
+  }
+  .carousel__mac-control-prev {
+    top: 115px;
+  }
+  .carousel__mac-control-next {
+    top: 115px;
+  }
 }
 
 @media (max-width: 575px) {
+  .tittle {
+    font-size: 21px;
+  }
   .header {
     &__logo {
       margin-top: 10px;
@@ -262,16 +319,11 @@
       height: 34px;
       font-size: 12px;
     }
-  }
-}
-
-@media (max-width: 500px) {
-  .header {
     &__phone {
-      margin-left: -42px;
       width: 264px;
     }
   }
+
   .carousel {
     top: 61px;
     right: 13px;
@@ -280,21 +332,56 @@
       height: 285px;
     }
     &-indicators {
-      top: -130px;
-      left: -53px;
-      width: 150px;
+      left: -100px;
+      &-control-prev {
+        display: none;
+        left: -55px;
+      }
+      &-control-next {
+        display: none;
+        left: 110px;
+      }
     }
+  }
 
-    .carousel-indicators [data-bs-target] {
-      margin-right: 5px;
-      width: 8px;
-      height: 8px;
+  .industries {
+    padding: 73px 0 105px 0;
+    &__tittle {
+      width: 270px;
     }
-    &-control-prev {
-      left: -55px;
+    &__nav {
+      width: 40%;
     }
-    &-control-next {
-      left: 110px;
+    &__computer {
+      width: 280px;
+      // margin-bottom: 40px;
     }
+    &__macbook {
+      width: 280px;
+    }
+    &__fill {
+      width: 208px;
+      height: 128px;
+      top: 12px;
+      left: 37px;
+    }
+  }
+  .carousel__mac {
+    width: 208px;
+    height: 129px;
+    top: -1px;
+    right: 0;
+    &-inner {
+      width: 206px;
+      height: 129px;
+    }
+  }
+  .carousel__mac-control-prev {
+    top: 180px;
+    left: 20px;
+  }
+  .carousel__mac-control-next {
+    top: 180px;
+    right: 20px;
   }
 }
