@@ -53,6 +53,11 @@
       font-size: 16px;
     }
   }
+  .footer {
+    &__descr {
+      width: 250px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -179,6 +184,14 @@
     &__right {
       width: 696px;
       height: 100%;
+    }
+  }
+  .footer {
+    &__descr {
+      width: 210px;
+    }
+    &__about {
+      margin-left: 70px;
     }
   }
 }
@@ -345,6 +358,31 @@
       font-size: 14px;
     }
   }
+  .footer {
+    padding: 25px 0 20px 0;
+
+    &__descr {
+      display: none;
+    }
+    &__logo {
+      margin-top: 10px;
+    }
+    &__modules {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+    &__industries {
+      margin-left: 0;
+    }
+    &__about {
+      margin-left: 0;
+    }
+    &__list {
+      a {
+        line-height: 28px;
+      }
+    }
+  }
 }
 
 @media (max-width: 575px) {
@@ -442,6 +480,7 @@
     right: 20px;
   }
   .benefits {
+    padding-bottom: 10px;
     &__tittle {
       width: 280px;
     }
@@ -451,10 +490,14 @@
     }
   }
   .variants {
-    height: 600px;
     &__tittle {
-      top: 40px;
+      top: 20px;
       width: 280px;
+    }
+    &__subtittle {
+      width: 265px;
+      margin: 0 auto;
+      font-size: 21px;
     }
     &__block {
       width: 280px;
@@ -462,7 +505,38 @@
     }
     &__left,
     &__right {
+      padding-right: 0;
+      padding-top: 135px;
       display: block;
+      padding-bottom: 25px;
+    }
+    &__right {
+      padding-left: 0;
+    }
+    &__left {
+      margin-bottom: 10px;
+      &::after {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__right {
+      &::before {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .feed {
+    min-height: 500px;
+    padding: 40px 0 40px 0;
+    &__tittle {
+      margin-top: 20px;
+    }
+    &__button {
+      width: 160px;
+      height: 34px;
+      font-size: 12px;
     }
   }
 }
