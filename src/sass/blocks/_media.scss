@@ -518,12 +518,13 @@
       width: 280px;
     }
     &__subtittle {
-      width: 265px;
+      width: 100%;
       margin: 0 auto;
       font-size: 18px;
     }
     &__block {
-      width: 280px;
+      width: 100%;
+      padding: 0 20px;
       text-align: center;
     }
     &__left,
