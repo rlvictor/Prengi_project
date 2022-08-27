@@ -26,12 +26,34 @@
   &__list {
     margin-left: 8px;
     a {
+      position: relative;
       font-weight: 700;
       font-size: 12px;
       line-height: 26px;
       text-transform: uppercase;
       color: white;
       text-decoration: none;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        width: 0;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        transition: width 0.5s;
+      }
+      &:hover:after {
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        content: "";
+        transition: width 0.5s;
+      }
     }
   }
 
@@ -103,14 +125,12 @@
     &-list {
       text-align: center;
       margin-bottom: 25px;
+
       a {
         text-decoration: none;
         color: #ffffff;
         text-transform: uppercase;
         font-size: 27px;
-        &:hover {
-          color: #00c2f0;
-        }
       }
     }
     &-active {

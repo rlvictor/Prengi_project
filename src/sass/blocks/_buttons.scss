@@ -8,4 +8,9 @@
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 5px;
+  &:hover {
+    background: #00a1c9;
+    box-shadow: 0px 0px 5px 1px #006d88;
+    border: 1px solid #00627ae4;
+  }
 }
