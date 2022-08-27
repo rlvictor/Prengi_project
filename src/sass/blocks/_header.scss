@@ -104,7 +104,7 @@
     left: -100%;
     width: 60%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.92);
     z-index: 10;
     transition: 0.6s all;
     nav {
@@ -127,10 +127,35 @@
       margin-bottom: 25px;
 
       a {
+        position: relative;
         text-decoration: none;
         color: #ffffff;
         text-transform: uppercase;
-        font-size: 27px;
+        font-size: 24px;
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: -3px;
+          width: 0;
+          height: 1px;
+          background-color: rgb(255, 255, 255);
+          transition: width 0.5s;
+        }
+        &:hover:after {
+          width: 100%;
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: -3px;
+          height: 1px;
+          background-color: rgb(255, 255, 255);
+          content: "";
+          transition: width 0.5s;
+        }
+        // &:hover {
+        //   color: #00c2f0;
+        // }
       }
     }
     &-active {

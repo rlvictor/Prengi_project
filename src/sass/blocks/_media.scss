@@ -4,6 +4,9 @@
   }
 }
 @media (max-width: 1200px) {
+  .tittle {
+    font-size: 29px;
+  }
   .contacts {
     &__wrapper {
       padding: 6px 0;
@@ -12,7 +15,6 @@
   .industries {
     &__tittle {
       width: 625px;
-      font-size: 29px;
     }
     &__nav {
       width: 778px;
@@ -61,6 +63,9 @@
 }
 
 @media (max-width: 991px) {
+  .tittle {
+    font-size: 25px;
+  }
   .contacts {
     &__wrapper {
       height: 120px;
@@ -82,13 +87,14 @@
     }
     &__tittle {
       margin-top: 60px;
-      font-size: 38px;
+      font-size: 33px;
     }
     &__subtittle {
       font-size: 21px;
     }
     &__button {
-      width: 215px;
+      width: 200px;
+      height: 45px;
     }
     &__phone {
       margin-top: 130px;
@@ -129,6 +135,9 @@
     &__img {
       width: 70%;
     }
+    &__arrow-descr {
+      font-size: 40px;
+    }
   }
   .industries {
     &__nav {
@@ -168,7 +177,7 @@
     &__descr {
       height: 130px;
       padding: 25px 30px 25px 30px;
-      font-size: 19px;
+      font-size: 16px;
     }
   }
   .variants {
@@ -186,6 +195,12 @@
       height: 100%;
     }
   }
+  .feed {
+    &__button {
+      width: 200px;
+      height: 45px;
+    }
+  }
   .footer {
     &__descr {
       width: 210px;
@@ -196,12 +211,15 @@
   }
 }
 @media (max-width: 767px) {
+  .tittle {
+    font-size: 23px;
+  }
   .contacts {
     display: none;
   }
   .header {
     &__tittle {
-      font-size: 35px;
+      font-size: 30px;
     }
     &__popup {
       display: none;
@@ -285,26 +303,29 @@
     &__img {
       width: 55%;
     }
+    &__arrow-descr {
+      font-size: 35px;
+    }
   }
   .industries {
     &__tittle {
-      width: 525px;
-      font-size: 24px;
+      width: auto;
     }
     &__nav {
-      // width: 523px;
-      width: 25%;
+      width: 60%;
       height: 267px;
       display: flex;
       justify-content: center;
     }
     &__items {
+      width: 90%;
       flex-direction: column;
     }
     &__item {
       border-right: none;
       border-bottom: 1px solid #8b9192;
       padding: 7px 8px;
+      text-align: center;
       a {
         font-size: 11px;
       }
@@ -352,7 +373,7 @@
       width: 92%;
     }
     &__subtittle {
-      font-size: 25px;
+      font-size: 22px;
     }
     &__descr {
       font-size: 14px;
@@ -387,7 +408,7 @@
 
 @media (max-width: 575px) {
   .tittle {
-    font-size: 21px;
+    font-size: 20px;
   }
   .header {
     &__logo {
@@ -396,16 +417,20 @@
     }
     &__tittle {
       margin-top: 20px;
-      font-size: 30px;
+      font-size: 21px;
       line-height: 35px;
+    }
+    &__subtittle {
+      font-size: 16px;
     }
     &__hamburger {
       right: 20px;
     }
     &__mini {
+      width: 70%;
       &-list {
         a {
-          font-size: 20px;
+          font-size: 17px;
         }
       }
     }
@@ -418,7 +443,11 @@
       width: 264px;
     }
   }
-
+  .modules {
+    &__arrow-descr {
+      font-size: 32px;
+    }
+  }
   .carousel {
     top: 61px;
     right: 13px;
@@ -441,15 +470,9 @@
 
   .industries {
     padding: 73px 0 105px 0;
-    &__tittle {
-      width: 270px;
-    }
-    &__nav {
-      width: 40%;
-    }
+
     &__computer {
       width: 280px;
-      // margin-bottom: 40px;
     }
     &__macbook {
       width: 280px;
@@ -486,7 +509,7 @@
     }
     &__descr {
       padding: 30px 15px 30px 15px;
-      font-size: 17px;
+      font-size: 15px;
     }
   }
   .variants {
@@ -497,7 +520,7 @@
     &__subtittle {
       width: 265px;
       margin: 0 auto;
-      font-size: 21px;
+      font-size: 18px;
     }
     &__block {
       width: 280px;
